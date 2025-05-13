@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./home/Home";
+import Home from "./components/Home/home";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Courses from "./courses/Courses";
-import Signup from "./components/Signup";
+import Courses from "./Courses/courses";
+import Signup from "./components/signup";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
 
