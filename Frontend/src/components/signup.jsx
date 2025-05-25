@@ -5,6 +5,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 function Signup() {
+  const backendurl = import.meta.env.VITE_BACKEND_URL;
   const location = useLocation();
   const navigate = useNavigate();
   const from = location.state?.from?.pathname || "/";
@@ -22,7 +23,7 @@ function Signup() {
     };
     
     try {
-      const response = await axios.post("http://localhost:4000/user/signup", userInfo);
+      const response = await axios.post(backendurl+ "/user/signup", userInfo);
       
       if (response.data) {
         // Store user data in localStorage

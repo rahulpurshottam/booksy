@@ -7,11 +7,13 @@ import Cards from "./cards";
 
 function Freebook() {
   const [book, setBook] = useState([]);
-  
+  const backendurl=import.meta.env.VITE_BACKEND_URL;
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/book");
+        const res = await axios.get(backendurl+"/book");
+        console.log(res.data);
+        
         const data = res.data.filter((data) => data.category === "Free");
         console.log(data);
         setBook(data);

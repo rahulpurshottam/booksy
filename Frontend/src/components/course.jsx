@@ -4,10 +4,11 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 function Course() {
   const [book, setBook] = useState([]);
+  const backendurl=import.meta.env.VITE_BACKEND_URL;
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/book");
+const res = await axios.get(backendurl + '/book/course');
         console.log(res.data);
         setBook(res.data);
       } catch (error) {

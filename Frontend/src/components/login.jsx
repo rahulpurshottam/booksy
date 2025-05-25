@@ -5,6 +5,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 function Login() {
+  const backendurl = import.meta.env.VITE_BACKEND_URL;
   const navigate = useNavigate();
   const {
     register,
@@ -19,7 +20,7 @@ function Login() {
     };
 
     try {
-      const res = await axios.post("http://localhost:4000/user/login", userInfo);
+      const res = await axios.post(backendurl + "/user/login", userInfo);
       console.log(res.data);
 
       if (res.data) {
