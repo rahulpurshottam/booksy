@@ -1,6 +1,4 @@
----
-
-## 2. Bookstore (React + TailwindCSS + DaisyUI + Node/Express + MongoDB)
+## Bookstore (React + TailwindCSS + DaisyUI + Node/Express + MongoDB)
 
 ```markdown
 # Online Bookstore
