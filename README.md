@@ -1,5 +1,10 @@
 ## Bookstore (React + TailwindCSS + DaisyUI + Node/Express + MongoDB)
 
+
+## Live Demo
+[🔗 View Live](https://booksy-mauve-two.vercel.app)
+
+
 ```markdown
 # Online Bookstore
 
@@ -38,3 +43,27 @@ A full-stack bookstore application built with React, TailwindCSS, DaisyUI, Node.
 - Mongoose (schema modeling)
 - JWT (authentication)
 - Bcrypt (password hashing)
+
+## 💾 Installation
+
+Clone the repository, install dependencies, and get started:
+
+# Clone the repository
+git clone https://github.com/rahulpurshottam/booksy.git
+
+# Navigate to project root
+cd booksy
+
+# Install backend dependencies
+cd Backend
+npm install
+
+# Install frontend dependencies
+cd ../Frontend
+npm install
+
+# Start backend (from backend directory)
+npm run dev
+
+# Start frontend (from frontend directory)
+npm start
