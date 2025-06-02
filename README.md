@@ -17,13 +17,12 @@ A full-stack bookstore application built with React, TailwindCSS, DaisyUI, Node.
 - [Tech Stack](#tech-stack)
 - [Folder Structure](#folder-structure)
 - [Installation](#installation)
-- [Environment Variables](#environment-variables)
 
 ---
 
 ## Features
 - **User Registration & Login:** Signup, login, and JWT-based authentication with encrypted passwords.
-- **Browse & Search Books:** View all books, filter by category or author, search by title.
+- **Browse & Search Books:** View all books, by category or author, by title.
 
 ---
 
