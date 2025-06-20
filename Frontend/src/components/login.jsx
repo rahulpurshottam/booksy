@@ -49,11 +49,11 @@ function Login() {
         <div className="modal-box">
           <form onSubmit={handleSubmit(onSubmit)} method="dialog">
             {/* Close button */}
-            <button 
+            <button
               type="button"
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
               onClick={() => {
-                
+                document.getElementById("my_modal_3").close();
                 navigate('/', { replace: true });
               }}
             >
